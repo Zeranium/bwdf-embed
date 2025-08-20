@@ -1,28 +1,6 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BWDF Spot</title>
-  <style>
-    /* 핵심: 문서 전체를 임베드 프레임 높이에 100%로 맞춘다 */
-    html, body { height:100%; margin:0; background:#000; }
-    .fill { position:relative; width:100%; height:100%; overflow:hidden; }
-    .fill iframe {
-      position:absolute; inset:0;
-      width:100%; height:100%;
-      border:0;
-    }
-  </style>
-</head>
-<body>
-  <div class="fill">
-    <iframe
-      src="https://player.vimeo.com/video/1111491179?autoplay=1&loop=1&muted=1&autopause=0&playsinline=1&badge=0&player_id=0&app_id=58479"
-      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      title="(KNN)부산월드드론페스티벌_TV_SPOT_0819">
-    </iframe>
-  </div>
-</body>
-</html>
+<div style="position:relative; padding-top:56.25%;"> <!-- 16:9 비율 -->
+  <iframe src="https://player.vimeo.com/video/1111491179?autoplay=1&loop=1&muted=1"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+          allow="autoplay; fullscreen">
+  </iframe>
+</div>
