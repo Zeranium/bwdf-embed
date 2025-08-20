@@ -1,6 +1,21 @@
-<div style="position:relative; padding-top:56.25%;"> <!-- 16:9 비율 -->
-  <iframe src="https://player.vimeo.com/video/1111491179?autoplay=1&loop=1&muted=1"
-          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-          allow="autoplay; fullscreen">
-  </iframe>
-</div>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1" />
+  <title>BWDF Spot (Background)</title>
+  <style>
+    html, body { height:100%; margin:0; background:#000; overflow:hidden; overscroll-behavior:none; }
+    .fill { position:relative; width:100%; height:100%; overflow:hidden; }
+    .fill iframe { position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }
+  </style>
+</head>
+<body onwheel="void(0)">
+  <div class="fill">
+    <iframe
+      src="https://player.vimeo.com/video/1111491179?background=1&autopause=0&playsinline=1"
+      allow="autoplay; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
+</body>
+</html>
